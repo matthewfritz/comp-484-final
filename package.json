@@ -1,0 +1,22 @@
+{
+  "name": "comp-484-final",
+  "version": "1.0.0",
+  "description": "Final project for COMP 484 (Web Engineering)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewfritz/comp-484-final.git"
+  },
+  "author": "Matthew Fritz <matthew.fritz@csun.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewfritz/comp-484-final/issues"
+  },
+  "homepage": "https://github.com/matthewfritz/comp-484-final#readme",
+  "dependencies": {
+    "socket.io": "^1.7.2"
+  }
+}
