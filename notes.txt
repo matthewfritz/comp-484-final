@@ -2,7 +2,13 @@
 CARD IMAGES
 -----------
 
-The card images are part of a single sprite sheet. Each card is 50px wide by 80px tall. The sprite sheet has a transparent background.
+The card images are part of a single sprite sheet. Each card is 81px wide by 119px tall. The sprite sheet has a transparent background. There is also a height offset for each row.
+
+- First row: 0px offset
+- Second row: 2px offset
+- Third row: 4px offset
+- Fourth row: 5px offset
+- Fifth row: 7px offset
 
 The regular cards are in the first four rows with thirteen columns each. The rows begin with the 2 card and end with the Ace.
 
