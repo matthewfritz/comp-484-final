@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('pages.auth.login');
 });
+
+// visual tests (beginning with /tests)
+Route::group(['prefix' => 'tests'], function() {
+
+	// /tests/display-cards
+	Route::get('display-cards', function() {
+		return view('pages.tests.test-display-cards');
+	});
+
+});

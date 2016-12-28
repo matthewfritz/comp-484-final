@@ -1,7 +1,7 @@
 @extends("layouts.master")
 
 @section("title")
-Networked Poker - Login
+Login
 @stop
 
 @section("content")
