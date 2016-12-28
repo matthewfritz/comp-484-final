@@ -7,3 +7,25 @@ The card images are part of a single sprite sheet. Each card is 50px wide by 80p
 From what I can tell, the images are possibly from Double Deuces Wild Poker (my favorite game on the Game King machine in Las Vegas).
 
 Source: http://stackoverflow.com/questions/18500801/resizing-background-sprite-image-to-fit-div
+
+------------
+DEPENDENCIES
+------------
+
+You will need Node.js (http://nodejs.org/en) and NPM (Node Package Manager). I recommend NVM (Node Version Manager) to maintain Node versions without having to do complicated upgrades:
+
+- OS/X and other *nix-based systems: https://github.com/creationix/nvm
+
+- Windows: https://github.com/coreybutler/nvm-windows
+
+Finally, you will need an installation of Composer: https://getcomposer.org/
+
+Make sure you run "composer install" to get all of the Laravel dependencies and then "npm install" to get the Socket.io Node dependencies.
+
+--------------
+RUNNING SOCKET
+--------------
+
+In the "socket" directory, run the following command to start the Socket.io server:
+
+node app.js
