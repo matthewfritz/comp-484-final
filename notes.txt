@@ -21,7 +21,7 @@ The last (fifth) row has an incomplete number of columns of the following kind:
 - Second column: Joker
 - Third (hearts), fourth (diamonds), fifth (clubs), sixth (spades) columns: Wild 2s
 
-From what I can tell, the images are possibly from Double Deuces Wild Poker (my favorite game on the Game King machine in Las Vegas).
+From what I can tell, the images are from Deuces Wild Bonus Poker (one of my favorite games on the Game King machine in Las Vegas).
 
 Source: http://stackoverflow.com/questions/18500801/resizing-background-sprite-image-to-fit-div
 
