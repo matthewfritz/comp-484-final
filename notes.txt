@@ -4,6 +4,23 @@ CARD IMAGES
 
 The card images are part of a single sprite sheet. Each card is 50px wide by 80px tall. The sprite sheet has a transparent background.
 
+The regular cards are in the first four rows with thirteen columns each. The rows begin with the 2 card and end with the Ace.
+
+The columns can be represented numerically as 2 through 14.
+
+The order of the suits per row is the following:
+
+- First row: hearts (h)
+- Second row: diamonds (d)
+- Third row: clubs (c)
+- Fourth row: spades (s)
+
+The last (fifth) row has an incomplete number of columns of the following kind:
+
+- First column: the card back
+- Second column: Joker
+- Third (hearts), fourth (diamonds), fifth (clubs), sixth (spades) columns: Wild 2s
+
 From what I can tell, the images are possibly from Double Deuces Wild Poker (my favorite game on the Game King machine in Las Vegas).
 
 Source: http://stackoverflow.com/questions/18500801/resizing-background-sprite-image-to-fit-div
