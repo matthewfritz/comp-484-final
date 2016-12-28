@@ -1,0 +1,9 @@
+-----------
+CARD IMAGES
+-----------
+
+The card images are part of a single sprite sheet. Each card is 50px wide by 80px tall. The sprite sheet has a transparent background.
+
+From what I can tell, the images are possibly from Double Deuces Wild Poker (my favorite game on the Game King machine in Las Vegas).
+
+Source: http://stackoverflow.com/questions/18500801/resizing-background-sprite-image-to-fit-div
