@@ -15,10 +15,12 @@
 	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
 
-	<!-- Cards and decks -->
+	<!-- Cards, decks, and hands -->
 	<script type="text/javascript" src="{{ asset('js/Card.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/Deck.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/Hand.js') }}"></script>
 
-	<!-- Socket configuration -->
+	<!-- Socket.io configuration -->
 	<script type="text/javascript">
 	var socket_host = '{{ env('SOCKET_HOST') }}';
 	var socket_ns = '{{ env('SOCKET_NAMESPACE') }}';

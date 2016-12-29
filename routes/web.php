@@ -23,4 +23,14 @@ Route::group(['prefix' => 'tests'], function() {
 		return view('pages.tests.test-display-cards');
 	});
 
+	// /tests/display-deck
+	Route::get('display-deck', function() {
+		return view('pages.tests.test-display-deck');
+	});
+
+	// /tests/display-hand
+	Route::get('display-hand', function() {
+		return view('pages.tests.test-display-hand');
+	});
+
 });

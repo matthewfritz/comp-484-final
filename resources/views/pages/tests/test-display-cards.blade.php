@@ -32,11 +32,17 @@ Should be the back of the cards:
 
 @section("page-scripts")
 <script type="text/javascript">
-	var coords_nine_hearts = generateCardImageCoords(9, 'h');
-	var coords_king_diamonds = generateCardImageCoords(13, 'd');
-	var coords_three_clubs = generateCardImageCoords(3, 'c');
-	var coords_ace_spades = generateCardImageCoords(14, 's');
-	var coords_card_back = generateCardImageCoords(0, 'back');
+	var nine_hearts = new Card(9, 'h');
+	var king_diamonds = new Card(13, 'd');
+	var three_clubs = new Card(3, 'c');
+	var ace_spades = new Card(14, 's');
+	var card_back = new Card(0, 'back');
+
+	var coords_nine_hearts = nine_hearts.generateCardImageCoords();
+	var coords_king_diamonds = king_diamonds.generateCardImageCoords();
+	var coords_three_clubs = three_clubs.generateCardImageCoords();
+	var coords_ace_spades = ace_spades.generateCardImageCoords();
+	var coords_card_back = card_back.generateCardImageCoords();
 
 	$(document).ready(function() {
 		$("#card-nine-hearts").css("background-image", "url('{{ asset('img/cards.gif') }}')");
