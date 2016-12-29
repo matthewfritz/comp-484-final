@@ -32,11 +32,11 @@ Should be the back of the cards:
 
 @section("page-scripts")
 <script type="text/javascript">
-	var nine_hearts = new Card(9, 'h');
-	var king_diamonds = new Card(13, 'd');
-	var three_clubs = new Card(3, 'c');
-	var ace_spades = new Card(14, 's');
-	var card_back = new Card(0, 'back');
+	var nine_hearts = new Card(Card.NINE, Card.HEART);
+	var king_diamonds = new Card(Card.KING, Card.DIAMOND);
+	var three_clubs = new Card(Card.THREE, Card.CLUB);
+	var ace_spades = new Card(Card.ACE, Card.SPADE);
+	var card_back = new Card(Card.NO_VALUE, Card.CARD_BACK);
 
 	var coords_nine_hearts = nine_hearts.generateCardImageCoords();
 	var coords_king_diamonds = king_diamonds.generateCardImageCoords();

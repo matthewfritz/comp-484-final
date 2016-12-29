@@ -44,22 +44,22 @@ class Card {
 		let offset = 0;
 
 		// figure out what the row should be
-		if(this.suit == "h") {
+		if(this.suit == Card.HEART) {
 			row = 0;
 		}
-		else if(this.suit == "d") {
+		else if(this.suit == Card.DIAMOND) {
 			row = 1;
 			offset = 2;
 		}
-		else if(this.suit == "c") {
+		else if(this.suit == Card.CLUB) {
 			row = 2;
 			offset = 4;
 		}
-		else if(this.suit == "s") {
+		else if(this.suit == Card.SPADE) {
 			row = 3;
 			offset = 5;
 		}
-		else if(this.value == 0 && this.suit == "back") {
+		else if(this.value == Card.NO_VALUE && this.suit == Card.CARD_BACK) {
 			// image of the back of the cards
 			col = 0;
 			row = 4;
@@ -72,6 +72,16 @@ class Card {
 		let y = ((row * 119) * -1) + offset;
 
 		return {"x": x, "y": y};
+	}
+
+	/**
+	 * Returns an invalid card value. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get NO_VALUE() {
+		return 0;
 	}
 
 	/**
@@ -242,5 +252,15 @@ class Card {
 	 */
 	static get SPADE() {
 		return 's';
+	}
+
+	/**
+	 * Returns the value of a card back suit. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get CARD_BACK() {
+		return 'back';
 	}
 }
