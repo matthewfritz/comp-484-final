@@ -1,7 +1,8 @@
 "use strict";
 
 /**
- * Represents a deck containing cards.
+ * Represents a deck containing cards. This must be included AFTER the
+ * inclusion of the Card class.
  *
  * @author Matthew Fritz <mattf@burbankparanormal.com>
  */
@@ -32,7 +33,12 @@ class Deck {
 	 * @return array
 	 */
 	static generateAllSuits() {
-		return ["h", "d", "c", "s"];
+		return [
+			Card.HEART,
+			Card.DIAMOND,
+			Card.CLUB,
+			Card.SPADE
+		];
 	}
 
 	/**
@@ -45,10 +51,20 @@ class Deck {
 	 * @return array
 	 */
 	static generateAllValues() {
-		var values = [];
-		for(var value = 0; value < 13; value++) {
-			values.push(value + 2);
-		}
-		return values;
+		return [
+			Card.TWO,
+			Card.THREE,
+			Card.FOUR,
+			Card.FIVE,
+			Card.SIX,
+			Card.SEVEN,
+			Card.EIGHT,
+			Card.NINE,
+			Card.TEN,
+			Card.JACK,
+			Card.QUEEN,
+			Card.KING,
+			Card.ACE
+		];
 	}
 }

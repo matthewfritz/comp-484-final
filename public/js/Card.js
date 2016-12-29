@@ -73,4 +73,174 @@ class Card {
 
 		return {"x": x, "y": y};
 	}
+
+	/**
+	 * Returns the value of a Two. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get TWO() {
+		return 2;
+	}
+
+	/**
+	 * Returns the value of a Three. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get THREE() {
+		return 3;
+	}
+
+	/**
+	 * Returns the value of a Four. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get FOUR() {
+		return 4;
+	}
+
+	/**
+	 * Returns the value of a Five. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get FIVE() {
+		return 5;
+	}
+
+	/**
+	 * Returns the value of a Six. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get SIX() {
+		return 6;
+	}
+
+	/**
+	 * Returns the value of a Seven. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get SEVEN() {
+		return 7;
+	}
+
+	/**
+	 * Returns the value of an Eight. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get EIGHT() {
+		return 8;
+	}
+
+	/**
+	 * Returns the value of a Nine. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get NINE() {
+		return 9;
+	}
+
+	/**
+	 * Returns the value of a Ten. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get TEN() {
+		return 10;
+	}
+
+	/**
+	 * Returns the value of a Jack. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get JACK() {
+		return 11;
+	}
+
+	/**
+	 * Returns the value of a Queen. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get QUEEN() {
+		return 12;
+	}
+
+	/**
+	 * Returns the value of a King. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get KING() {
+		return 13;
+	}
+
+	/**
+	 * Returns the value of an Ace. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get ACE() {
+		return 14;
+	}
+
+	/**
+	 * Returns the value of a Heart suit. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get HEART() {
+		return 'h';
+	}
+
+	/**
+	 * Returns the value of a Diamond suit. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get DIAMOND() {
+		return 'd';
+	}
+
+	/**
+	 * Returns the value of a Club suit. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get CLUB() {
+		return 'c';
+	}
+
+	/**
+	 * Returns the value of a Spade suit. This is defined as a static getter to mimic
+	 * the functionality of class constants from other languages.
+	 *
+	 * @return int
+	 */
+	static get SPADE() {
+		return 's';
+	}
 }
