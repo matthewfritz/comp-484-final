@@ -218,7 +218,7 @@ class Card {
 	 * Returns the value of a Heart suit. This is defined as a static getter to mimic
 	 * the functionality of class constants from other languages.
 	 *
-	 * @return int
+	 * @return string
 	 */
 	static get HEART() {
 		return 'h';
@@ -228,7 +228,7 @@ class Card {
 	 * Returns the value of a Diamond suit. This is defined as a static getter to mimic
 	 * the functionality of class constants from other languages.
 	 *
-	 * @return int
+	 * @return string
 	 */
 	static get DIAMOND() {
 		return 'd';
@@ -238,7 +238,7 @@ class Card {
 	 * Returns the value of a Club suit. This is defined as a static getter to mimic
 	 * the functionality of class constants from other languages.
 	 *
-	 * @return int
+	 * @return string
 	 */
 	static get CLUB() {
 		return 'c';
@@ -248,7 +248,7 @@ class Card {
 	 * Returns the value of a Spade suit. This is defined as a static getter to mimic
 	 * the functionality of class constants from other languages.
 	 *
-	 * @return int
+	 * @return string
 	 */
 	static get SPADE() {
 		return 's';
@@ -258,7 +258,7 @@ class Card {
 	 * Returns the value of a card back suit. This is defined as a static getter to mimic
 	 * the functionality of class constants from other languages.
 	 *
-	 * @return int
+	 * @return string
 	 */
 	static get CARD_BACK() {
 		return 'back';
