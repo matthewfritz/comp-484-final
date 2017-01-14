@@ -25,6 +25,8 @@ Test Generating Hands
 	<li>Royal Flush</li>
 </ol>
 
+<p>There have also been two versions of a Straight and a Full House generated and scored based on the card sets and kicker cards
+
 @stop
 
 @section("page-scripts")
@@ -164,5 +166,65 @@ Test Generating Hands
 	var hand11 = new Hand(cards11);
 	var score11 = hand11.scoreHand();
 	console.log("Score: " + score11 + "; Text: " + possibleHands[score11]);
+
+	// attempt to compare two Straight hands (the second should win)
+	var cards12_1 = [
+		new Card(Card.TWO, Card.CLUB),
+		new Card(Card.THREE, Card.DIAMOND),
+		new Card(Card.FOUR, Card.CLUB),
+		new Card(Card.FIVE, Card.SPADE),
+		new Card(Card.SIX, Card.HEART)
+	];
+	var cards12_2 = [
+		new Card(Card.FOUR, Card.HEART),
+		new Card(Card.FIVE, Card.SPADE),
+		new Card(Card.SIX, Card.CLUB),
+		new Card(Card.SEVEN, Card.DIAMOND),
+		new Card(Card.EIGHT, Card.CLUB)
+	];
+	console.log("Comparing two Straight hands (the result should be -1)...");
+	var hand12_1 = new Hand(cards12_1);
+	var hand12_2 = new Hand(cards12_2);
+	console.log("Result: " + hand12_1.compareTo(hand12_2));
+
+	// attempt to compare two Full House hands (the first should win)
+	var cards13_1 = [
+		new Card(Card.QUEEN, Card.CLUB),
+		new Card(Card.QUEEN, Card.DIAMOND),
+		new Card(Card.KING, Card.CLUB),
+		new Card(Card.KING, Card.DIAMOND),
+		new Card(Card.KING, Card.SPADE)
+	];
+	var cards13_2 = [
+		new Card(Card.THREE, Card.CLUB),
+		new Card(Card.THREE, Card.DIAMOND),
+		new Card(Card.KING, Card.CLUB),
+		new Card(Card.KING, Card.DIAMOND),
+		new Card(Card.KING, Card.SPADE)
+	];
+	console.log("Comparing two Full House hands (the result should be 1)...");
+	var hand13_1 = new Hand(cards13_1);
+	var hand13_2 = new Hand(cards13_2);
+	console.log("Result: " + hand13_1.compareTo(hand13_2));
+
+	// attempt to compare two Two Pair hands (the first should win)
+	var cards14_1 = [
+		new Card(Card.TWO, Card.CLUB),
+		new Card(Card.TWO, Card.DIAMOND),
+		new Card(Card.SIX, Card.CLUB),
+		new Card(Card.SIX, Card.DIAMOND),
+		new Card(Card.SEVEN, Card.SPADE)
+	];
+	var cards14_2 = [
+		new Card(Card.THREE, Card.CLUB),
+		new Card(Card.THREE, Card.DIAMOND),
+		new Card(Card.FIVE, Card.CLUB),
+		new Card(Card.FIVE, Card.DIAMOND),
+		new Card(Card.EIGHT, Card.SPADE)
+	];
+	console.log("Comparing two Two Pair hands (the result should be 1)...");
+	var hand14_1 = new Hand(cards14_1);
+	var hand14_2 = new Hand(cards14_2);
+	console.log("Result: " + hand14_1.compareTo(hand14_2));
 </script>
 @stop
